@@ -18,4 +18,4 @@ class Solution:
             else:
                 break
 
-        return numberofzeros
+        print("There are, " + str(numberofzeros) + " behind this number.")

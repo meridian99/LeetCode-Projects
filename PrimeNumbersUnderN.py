@@ -39,7 +39,7 @@ def countPrimes():
             primeCounter.append(number)
             numPrimes += 1
 
-    return numPrimes
+    print("There are, " + str(numPrimes) + " before the number you gave me.")
 
 
 class Solution:

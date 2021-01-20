@@ -1,9 +1,6 @@
 def isPalindrome():
     s = input("Give me a word, preferred to be a palindrome.")
     # if the length of s is less than 2 then it is always a palindrome.
-    if len(s) < 2:
-            return True
-
     letters = "1234567890abcdefghijklmnopqrstuvwxyz"
 
     newString = ""
@@ -16,11 +13,11 @@ def isPalindrome():
 
     while leftIndex < rightIndex:
         if newString[leftIndex] != newString[rightIndex]:
-            return False
+            print("No, this is not a palindrome.")
         leftIndex += 1
         rightIndex -= 1
 
-    return True
+    print("Yes, this is a palindrome.")
 
 class Solution:
     isPalindrome()

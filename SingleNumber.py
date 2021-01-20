@@ -16,7 +16,7 @@ def singleNumber():
             my_list.remove(single)
 
     # Returns the first element in my_list which should be the one that appears only once.
-    return my_list[0]
+    print(my_list[0])
 
 class Solution:
     singleNumber()

@@ -1,5 +1,6 @@
 def majorityElement():
-    nums = list(input("Give a list with a majority element."))
+    MyInput = input("Give a list of elements separated by a space.")
+    nums = MyInput.split()
     occurrences = {}
     for item in nums:
         if item in occurrences:
@@ -10,7 +11,7 @@ def majorityElement():
     halfLength = len(nums) // 2 + 1
     for key in occurrences.keys():
         if occurrences.get(key) >= halfLength:
-            return key
+            print(key)
 
 class Solution:
     majorityElement()

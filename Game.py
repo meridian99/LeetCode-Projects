@@ -8,7 +8,7 @@ def game():
     print(" ")
     while True:
         leave = input("Do you leave the house, or no? ")
-        if leave == "1":
+        if leave == "2":
             print("The amalgamations have sensed you, they break into the house and eat you alive. GAME OVER.")
             return False
         else:
@@ -16,9 +16,19 @@ def game():
         print("You start walking and soon you see.")
         print(" ")
         dire = input("There is a group of amalgams if front of you rushing at you, do you go left or right to escape? ")
-        if dire == 1:
-            print("You go left and see a supermarket, do you loot it or continue moving?")
+        if dire == "1":
+            print(" ")
+            supermarket = input("You go left and see a supermarket, do you loot it or continue moving?")
+            if supermarket == "1":
+                print("You found the Blade of Shurima, you can now kill higher level amalgams.")
+                backleft = input("Do you want to go back or continue moving?")
         else:
-            print("You go right and see a small group of amalgams, do you fight or run?")
+            rightamal = input("You go right and see a small group of amalgams, glowing red, do you fight or run?")
+            if rightamal == "1":
+                print("These are stronger amalgams, they tore you to shreds. GAME OVER.")
+                return False
+            else:
+                back = input("These amalgams are too strong, stronger than the others. You decide to run back to the cross, and go left.")
+
 class Solution:
     game()
